@@ -1,0 +1,47 @@
+#Magic 8 ball repleca program
+#Made by Joshua Joseph
+
+#_______________________________________________________________________
+
+import random     #<< RANDOM MODULE
+import time        #<< TIME MODULE
+
+#_______________________________________________________________________
+
+time.sleep(2)   #<< THIS STATEMENT SLOWS THE OUTPUT DOWN
+
+print("Welcome To Magic 8! \n")     #<< TITLE
+
+time.sleep(2)     #<< THIS STATEMENT SLOWS THE OUTPUT DOWN
+
+print("Say 'stop', to quit \n")   #<< PRINTS THE INSTRUCTION
+
+time.sleep(2)  #<<THIS STATEMENT SLOWS THE OUTPUT DOWN
+
+#_______________________________________________________________________
+
+yesno = "Yes","No"   #<< VARIABLE STORING THE ANSWERS
+
+#_______________________________________________________________________
+
+while True:    #<< WHILE TRUE STATEMENT
+    
+    print("Ask me a yes or no question: \n")    #<<TELLS THE USER WHAT TO DO
+    
+    question = input()    #<< GIVES THE USER ABILITY TO ASK A QUESTION
+    
+    print(" ")     #<< ADDS A SPACE TO THE OUTPUT
+    
+    time.sleep(1)    #<< THIS STATEMENT SLOWS THE OUTPUT DOWN
+    
+    print("Loading... \n")     #<< PRINTS LOADING
+    
+    print(random.choice(yesno))    #<< THIS RANDOME GENERATES A ANSWER FROM THE (yesno) VARIABLE
+
+    print(" ")     #<< ADDS A SPACE TO THE OUTPUT
+    
+    if question.capitalize() == "stop":    #<< IF THE USER SAYS 'STOP', THE LOOP BREAKS AD THE PROGRAM STOPS
+        
+        break
+        
+#_______________________________________________________________________
