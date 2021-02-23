@@ -1,0 +1,32 @@
+#Simple dice program
+#Made by Joshua Joseph
+ 
+#__________________________________________________________________________    
+    
+import time      #<< TIME MODULE 
+import random      #<< RANDOM MODULE
+
+print("𝗗𝗜𝗖𝗘! \n")     #<< TITLE
+
+#_________________________________________________________________________
+
+while True:      #LOOP STATEMENT
+    
+    time.sleep(3)      #<< THIS STATEMENT IS FROM THE TIME MODULE, RESPONSIBLE FOR SLOWING DOWN THE OUTPUT
+    
+    print("Rolling.... \n")      #<< PRINT("Rolling...")
+    
+    time.sleep(1)      #<< THIS STATEMENT IS FROM THE TIME MODULE, RESPONSIBLE FOR SLOWING DOWN THE OUTPUT
+    
+    print(random.randint(1,6),"\n")      #THIS STATEMENT USES THE RANDOM MODULE AND PRINTS A RANDOM NUMBER FROM 1 TO 6
+    
+    rollagain = input("Roll Again? ")      #<< ASKS THE USER IF THE WOULD LIKE TO RU AGAIN
+    
+    print(" ")      #<< PRINTS A SPACE IN THE OUTPUT
+    
+    if rollagain.capitalize() == "No":     #<< IF THE USER SAYS NO, IT BREAKS THE LOOP AND STOPS THE PROGRAM
+        
+        break      #<< BREAKS THE PROGRAM
+        
+#__________________________________________________________________________________
+    
