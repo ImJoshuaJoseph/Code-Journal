@@ -1,0 +1,106 @@
+#Calcualtor program by Joshua Joseph
+#Code editor: Python
+#This calaculator program has the ability to add, subtract, divide and multiply
+
+#________________________________________________
+
+
+import time        #<< TIME MODULE
+
+print(" 𝘾𝘼𝙇𝘾𝙐𝙇𝘼𝙏𝙊𝙍 \n")     #<< TITLE
+
+#________________________________________________
+
+def Add():    #<< ADD FUNCTION
+    
+    num1 = int(input())     #<< GETS THE FIRST VALUE OF THE USER
+    
+    print("+")        #<<  PRINT THE PLUS OPERATOR IN BETWEEN
+    
+    num2 = int(input())      #<< GETS THE SECOND VALUE OF THE USER
+    
+    print(" ")         #<< PRINT SPACE I THE OUTPUT
+    
+    print(num1,"+",num2,"=",num1+num2)      #<< ADDS BOTH USER VALUES, AND PRINTS THE TOTAL
+    
+#________________________________________________
+    
+def Subtract():       #<< SUBTRACT FUNTION
+    
+    num1 = int(input())     #<< GETS THE FIRST VALUE OF THE USER
+    
+    print("-")       #<< PRINTS THE MINUS OPERATOR IN BETWEEN
+    
+    num2 = int(input())      #<< GETS THE SECOND VALUE OF THE USER
+    
+    print(" ")         #<< PRINTS SPACE IN BETWEEN
+    
+    print(num1,"-",num2,"=",num1-num2)       #<< SUBTRACTS BOTH USER VALUES, AND PRINTS THE TOTAL
+    
+#________________________________________________
+
+    
+def Multiply():     #<< MULTIPLICATION FUNCTION
+    
+    num1 = int(input())   #<< GET THE FIRST VALUE OF THE USER
+    
+    print("X")       #<< PRINTS THE MULTIPLICATION OPERATOR IN BETWEEN
+    
+    num2 = int(input())    #<< GETS THE SECOND VALUE OF THE OPERATOR
+    
+    print(" ")     #<< PRINTS SPACE IN BETWEEN
+    
+    print(num1,"X",num2,"=",num1*num2)     #<< MULTIPLIES BOTH USER VALUES, AND PRINTS THE TOTAL
+    
+#________________________________________________
+    
+def Division():     #<< DIVISION FUNCTION
+    
+    num1 = int(input())    #<< GETS THE FIRST VALUE OF THE USER
+    
+    print("÷")    #<< PRINTS THE DIVISION OPERATOR IN BETWEEN
+    
+    num2 = int(input())     #<< GETS THE SECOND VALUE OF THE USER
+    
+    print(" ")       #<< PRINTS THE SPACE IN BETWEEN
+    
+    print(num1,"÷",num2,"=",num1/num2)      #<< DIVIDES BOTH USER VALUES, AND PRINTS THE TOTAL
+    
+#________________________________________________
+
+while True:    #<< WHILE TRUE STATEMENT
+    
+    time.sleep(3)    #<< THIS STATEMT IS APART OF THE TIME MODULE, IT IS RESPONSIBLE FOR SLOWING DOWN THE OUTPUT
+    
+    print(" ")     #<< PRINTS SPACE
+    
+    Operations = ["1: Addition","2: Subtraction","3: Multiplication","4: Division"]     #<< GIVE THE USER THEIR OPERATION OPTIONS
+
+    for op in Operations:   #<< FOR LOOP STATEMENT THAT PRINT THE ELEMENTS OF THE (OPERATION LIST)
+        print(op)
+    
+    print(" ")     #<< PRINTS SPACE 
+    
+    print("Select operation number: \n")    #<< TELLS THE USER TO PRINT THEIR OPERATION NUMBER
+
+    Select = int(input(": "))      #<< GET THE USER OPTION NUMBER
+    
+#________________________________________________
+
+    if Select == 1:        #<< IF THE USER OPTION NUMBER WAS ONE
+        
+        Add()           #<< THE ADD FUNCTION IS CALLED
+    
+    elif Select == 2:      #<< ELIF THE USER OPTION NUMBER WAS TWO
+        
+        Subtract()      #<< THE SUBTRACT FUNTION IS CALLED
+    
+    elif Select == 3:      #<< ELIF THE USER OPTION NUMBER WAS THREE
+        
+        Multiply()       #<< THE MULTIPLICATION FUNCTION IS CALLED
+    
+    elif select == 4:      #<< ELIF THE USER OPTION NUMBER WAS FOUR
+        
+        Division()       #<< THE DIVISION FUNTION IS CALLED
+        
+#________________________________________________
