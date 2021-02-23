@@ -1,0 +1,46 @@
+#Simple login & confirmation system
+#Made by Joshua Joseph
+
+#_____________________________________________________________
+
+import time   #<< TIME MODULE
+
+#_____________________________________________________________
+
+print("  GoTube !")     #<< TITLE
+
+User_Name1 = input("Username: ")     #<< ASKS THE USER FOR THEIR USERNAME
+ 
+prit(" ")     #<< ADDS A SPACE TO THE OUTPUT
+
+Password1 = input("Password: ")      #<< ASKS THE USER FOR A RANDOM PASSWORD
+
+print(" ")    #<< ADDS A SPACE TO THE OUTPUT
+
+time.sleep(2)    #<< SLOWS THE OUTPUT DOWN BY 2 SECODNS
+
+print("SUCCESSFULLY CREATED YOUR ACCOUNT \n")    #<< PRINTS THE STATEMENT
+
+time.sleep(2)   #<< SLOWS THE OUTPUT DOWN BY 2 SECODNS
+
+#_____________________________________________________________
+
+print("PLEASE RE-ENTER YOUR LOGI DETAILS TO CONFIRM \n")    #<< TELLS THE USER TO RE-ETER THEIR LOGING DETAILS
+
+User_Name2 = input("Username: ")     #<< ASK THE USER FOR THEIR USERNAME AGAIN
+
+Password2 = input("Password: ")     #<< ASKS THE USER FOR THEIR PASSWORD AGAIN
+
+print(" ")    #<< ADS A SPACE TO THE OUTPUT
+
+#_____________________________________________________________
+
+if User_Name2 == User_Name1 and Password1 == Password2:   #<< IF THE USERNAME AND ASSWORD ARE COORECT
+    
+    print("WELCOME TO GOTUBE",User_Name1)    #<< THE USER IS WELCOMED
+    
+else:   #<< ELSE IF THE USER LOGIN DETAILS DOESN'T MATCH
+    
+    print("AN ERROR OCCURED ")   #<< THEY ARE GREETED WITH ANA ERROR
+
+#_____________________________________________________________
